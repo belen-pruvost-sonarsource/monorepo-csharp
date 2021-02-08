@@ -28,6 +28,10 @@ public static class Helper {
         // I add another useless code line
         public static void DoNothing(string useless){
              // do nothing
+            for (int i = 10; i < 10; i++)  // Noncompliant
+            {
+                // ...
+            }
         }
         public static int ComputeWithSomeRecursion(int num, int inc)
         {
